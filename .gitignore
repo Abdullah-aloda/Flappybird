@@ -1,0 +1,26 @@
+# Godot
+.import/
+.export/
+.export_presets.cfg
+.project.godot.cache
+*.tmp
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Builds / exports
+build/
+bin/
+export/
+*.zip
+*.exe
+*.apk
+
+# Mono / C#
+.mono/
+*.csproj
+*.sln
