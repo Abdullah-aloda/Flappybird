@@ -1,0 +1,10 @@
+# Handle line endings consistently
+* text=auto
+
+# Keep binary files treated as binary
+*.png binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.ico binary
+*.ttf binary
