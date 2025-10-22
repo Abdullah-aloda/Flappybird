@@ -1,16 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://yik7r83u5ky0"]
+[gd_scene load_steps=5 format=3 uid="uid://yik7r83u5ky0"]
 
 [ext_resource type="Script" uid="uid://c2fsnmmxr20v7" path="res://scripts/game.gd" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://dcpj2klltlxf0" path="res://scenes/player.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://bg13j0aqrnxsx" path="res://scenes/diver_enemy.tscn" id="4_iywne"]
 [ext_resource type="PackedScene" uid="uid://yc3bkarn8ayy" path="res://scenes/enemy.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-4, 4)
 script = ExtResource("1_uwrxv")
+enemy_scenes = Array[PackedScene]([ExtResource("4_lbhrr"), ExtResource("4_iywne")])
+
+[node name="EnemySpawnTimer" type="Timer" parent="."]
+autostart = true
 
 [node name="Player" parent="." instance=ExtResource("2_yqjtg")]
 
 [node name="LaserContainer" type="Node2D" parent="."]
 
-[node name="Enemy" parent="." instance=ExtResource("4_lbhrr")]
-position = Vector2(247, 197)
+[node name="EnemyContainer" type="Node2D" parent="."]
+
+[connection signal="timeout" from="EnemySpawnTimer" to="." method="_on_enemy_spawn_timer_timeout"]
