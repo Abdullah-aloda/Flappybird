@@ -19,13 +19,12 @@ func _process(delta):
 			shoot_cd = false
 
 func _physics_process(delta):
-	var direction = Vector2(Input.get_axis("move_left",
-"move_right"), Input.get_axis("move_up", "move_down"))
-	print(direction)
+	var direction = Vector2(Input.get_axis("move_left", "move_right"), Input.get_axis("move_up", "move_down"))
 	velocity = direction * speed
 	move_and_slide()
+	position.x = clamp(position.x, -230, 230)
+	position.y = clamp(position.y, -250, 100)
 	
-
 func shoot():
 	laser_shot.emit(laser_scene, muzzle.global_position)
 	

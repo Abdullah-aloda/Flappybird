@@ -6,6 +6,7 @@
 [node name="DiverEnemy" instance=ExtResource("1_x15ja")]
 speed = 400
 hp = 1
+points = 15
 
 [node name="Sprite2D" parent="." index="0"]
 scale = Vector2(0.13, 0.13)
