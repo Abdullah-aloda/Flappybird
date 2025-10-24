@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dyo24l8x852g3"
+path="res://.godot/imported/live lost-[AudioTrimmer.com].mp3-94306986b14786615ecebaa6e0df8adc.mp3str"
+
+[deps]
+
+source_file="res://audio/live lost-[AudioTrimmer.com].mp3"
+dest_files=["res://.godot/imported/live lost-[AudioTrimmer.com].mp3-94306986b14786615ecebaa6e0df8adc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

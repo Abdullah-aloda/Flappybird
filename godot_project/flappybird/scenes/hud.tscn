@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cqydb0s4u8a5u"]
+[gd_scene load_steps=5 format=3 uid="uid://cqydb0s4u8a5u"]
 
 [ext_resource type="Script" uid="uid://dvdb7xsrswlig" path="res://scripts/hud.gd" id="1_oo0fn"]
 [ext_resource type="FontFile" uid="uid://nu4rtr5xsgt7" path="res://art/Debrosee-ALPnL.ttf" id="2_5ysmq"]
@@ -6,6 +6,9 @@
 [sub_resource type="LabelSettings" id="LabelSettings_6fi6k"]
 font = ExtResource("2_5ysmq")
 font_size = 67
+
+[sub_resource type="LabelSettings" id="LabelSettings_oo0fn"]
+font_size = 34
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -26,3 +29,13 @@ text = "SCORE: 9999"
 label_settings = SubResource("LabelSettings_6fi6k")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Lives" type="Label" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 88.0
+offset_right = 341.0
+offset_bottom = 135.0
+text = "LIVES: 3"
+label_settings = SubResource("LabelSettings_oo0fn")
+horizontal_alignment = 1
